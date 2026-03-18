@@ -1,11 +1,12 @@
 import { Box, IconButton, Modal, Paper, styled, Table, TableBody, TableCell, tableCellClasses, TableContainer, TableHead, TableRow } from '@mui/material'
 import React, { useEffect, useState } from 'react'
-// import {Deal} from '../../../types/dealTypes';
 import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store';
 import EditIcon from '@mui/icons-material/Edit';
 import { deleteDeal, getAllDeals } from '../../../ReduxToolkit/Admin/DealSlice';
 import UpdateDealForm from './UpdateDealForm';
 import { Delete } from '@mui/icons-material';
+import { resolveImageUrl } from '../../../util/resolveImageUrl';
+import type { Deal } from '../../../types/dealTypes';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -40,23 +41,25 @@ const style = {
 };
 const DealsTable = () => {
   const { deal } = useAppSelector(store => store)
-  const [selectedDealId, setSelectedDealId] = useState<number>();
+  const [selectedDealId, setSelectedDealId] = useState<Deal['_id']>();
   const [open, setOpen] = React.useState(false);
   // const [openCreateDealForm, setOpenCreateDealForm] = React.useState(false);
   const dispatch = useAppDispatch()
 
 
-  const handleOpen = (id: number | undefined) => () => {
+  const handleOpen = (id: Deal['_id']) => () => {
     setSelectedDealId(id);
     setOpen(true);
   };
   const handleClose = () => setOpen(false);
-  const handleDelete = (id: any) => () => {
+  const handleDelete = (id: Deal['_id']) => () => {
+    if (!id) return;
     dispatch(deleteDeal(id))
   }
   useEffect(() => {
     dispatch(getAllDeals())
-  }, [])
+  }, [dispatch])
+
   return (
     <>
 
@@ -74,7 +77,7 @@ const DealsTable = () => {
           </TableHead>
           <TableBody>
             {deal.deals.map(
-              (deal: any, index) => (
+              (deal: Deal, index) => (
                 <StyledTableRow key={deal._id}>
                   <StyledTableCell component="th" scope="row">
                     {index + 1}
@@ -82,7 +85,7 @@ const DealsTable = () => {
                   <StyledTableCell component="th" scope="row">
                     <img
                       className="w-20 rounded-md"
-                      src={deal.category.image}
+                      src={resolveImageUrl(deal.category.image)}
                       alt=""
                     />
                   </StyledTableCell>

@@ -10,6 +10,7 @@ import { Box, IconButton, Modal, styled } from "@mui/material";
 import type { HomeCategory } from "../../../types/homeDataTypes";
 import EditIcon from "@mui/icons-material/Edit";
 import UpdateHomeCategoryForm from "./UpdateHomeCategoryForm";
+import { resolveImageUrl } from "../../../util/resolveImageUrl";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -43,7 +44,7 @@ const style = {
   p: 4,
 };
 
-function HomeCategoryTable({categories}:{categories:HomeCategory[] | undefined}) {
+function HomeCategoryTable({ categories }: { categories: HomeCategory[] | undefined }) {
   const [selectedCategory, setSelectedCategory] =
     React.useState<HomeCategory>();
   const [open, setOpen] = React.useState(false);
@@ -79,7 +80,7 @@ function HomeCategoryTable({categories}:{categories:HomeCategory[] | undefined})
                   <StyledTableCell component="th" scope="row">
                     <img
                       className="w-20 rounded-md"
-                      src={category.image}
+                      src={resolveImageUrl(category.image)}
                       alt=""
                     />
                   </StyledTableCell>

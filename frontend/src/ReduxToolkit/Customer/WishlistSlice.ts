@@ -15,7 +15,7 @@ export const getWishlistByUserId = createAsyncThunk<Wishlist | null, void, { rej
     try {
       const jwt = localStorage.getItem("jwt");
 
-      if (!jwt) return null;
+      if (!jwt || jwt === "null" || jwt === "undefined") return null;
 
       const response = await api.get(`/api/wishlist`, {
         headers: {
@@ -43,7 +43,7 @@ export const addProductToWishlist = createAsyncThunk<Wishlist, { productId: numb
     try {
       const jwt = localStorage.getItem("jwt");
 
-      if (!jwt) {
+      if (!jwt || jwt === "null" || jwt === "undefined") {
         return rejectWithValue("Please login to add wishlist items");
       }
 

@@ -26,8 +26,8 @@ import { useAppDispatch, useAppSelector } from "../../../ReduxToolkit/Store";
 import { createProduct } from "../../../ReduxToolkit/Seller/sellerProductSlice";
 import { uploadToCloudinary } from "../../../util/uploadToCloudnary";
 import { electronicsLevelThree } from "../../../data/category/level-three/electronicsLevelThree";
-import { electronicsLevelTwo } from "../../../data/category/level-two/electronicsLavelTwo";
-import { furnitureLevelTwo } from "../../../data/category/level-two/furnitureLevleTwo";
+import { electronicsLevelTwo } from "../../../data/category/level-two/electronicsLevelTwo";
+import { furnitureLevelTwo } from "../../../data/category/level-two/furnitureLevelTwo";
 import { furnitureLevelThree } from "../../../data/category/level-three/furnitureLevelThree";
 import React, { useState, useEffect } from "react";
 

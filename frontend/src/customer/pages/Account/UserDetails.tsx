@@ -4,7 +4,7 @@ import {
   
 } from "@mui/material";
 
-import ProfileFildCard from "../../../seller/pages/Account/ProfileFildCard";
+import ProfileFieldCard from "../../../seller/pages/Account/ProfileFieldCard";
 import { useAppSelector } from "../../../ReduxToolkit/Store";
 
 const UserDetails = () => {
@@ -36,11 +36,11 @@ const UserDetails = () => {
             src="https://cdn.pixabay.com/photo/2014/11/29/19/33/bald-eagle-550804_640.jpg"
           /> */}
           <div>
-            <ProfileFildCard keys={"Name"} value={user.user?.fullName} />
+            <ProfileFieldCard keys={"Name"} value={user.user?.fullName} />
             <Divider />
-            <ProfileFildCard keys={"Email"} value={user.user?.email} />
+            <ProfileFieldCard keys={"Email"} value={user.user?.email} />
             <Divider />
-            <ProfileFildCard keys={"Mobile"} value={user.user?.mobile} />
+            <ProfileFieldCard keys={"Mobile"} value={user.user?.mobile} />
           </div>
         </div>
       </div>

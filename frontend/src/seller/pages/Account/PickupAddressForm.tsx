@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { TextField, Button } from "@mui/material";
-import {type UpdateDetailsFormProps } from "./BussinessDetailsForm";
+import {type UpdateDetailsFormProps } from "./BusinessDetailsForm";
 import { useAppDispatch, useAppSelector } from "../../../ReduxToolkit/Store";
 import { updateSeller } from "../../../ReduxToolkit/Seller/sellerSlice";
 

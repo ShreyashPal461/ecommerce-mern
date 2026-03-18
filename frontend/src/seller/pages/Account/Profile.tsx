@@ -9,10 +9,10 @@ import {
   Modal,
   Snackbar,
 } from "@mui/material";
-import ProfileFildCard from "./ProfileFildCard";
+import ProfileFieldCard from "./ProfileFieldCard";
 import EditIcon from "@mui/icons-material/Edit";
-import PersonalDetailsForm from "./PersionalDetailsForm";
-import BusinessDetailsForm from "./BussinessDetailsForm";
+import PersonalDetailsForm from "./PersonalDetailsForm";
+import BusinessDetailsForm from "./BusinessDetailsForm";
 import PickupAddressForm from "./PickupAddressForm";
 import BankDetailsForm from "./BankDetailsForm";
 
@@ -89,17 +89,17 @@ const Profile = () => {
             src="https://cdn.pixabay.com/photo/2014/11/29/19/33/bald-eagle-550804_640.jpg"
           />
           <div>
-            <ProfileFildCard
+            <ProfileFieldCard
               keys={"Seller Name"}
               value={sellers.profile?.sellerName}
             />
             <Divider />
-            <ProfileFildCard
+            <ProfileFieldCard
               keys={"Seller Email"}
               value={sellers.profile?.email}
             />
             <Divider />
-            <ProfileFildCard
+            <ProfileFieldCard
               keys={"Seller Mobile"}
               value={sellers.profile?.mobile}
             />
@@ -125,17 +125,17 @@ const Profile = () => {
         </div>
 
         <div className=" ">
-          <ProfileFildCard
+          <ProfileFieldCard
             keys={"Business Name/Brand Name"}
             value={sellers.profile?.businessDetails?.businessName}
           />
           <Divider />
-          <ProfileFildCard
+          <ProfileFieldCard
             keys={"GSTIN"}
             value={sellers.profile?.GSTIN || "not provided"}
           />
           <Divider />
-          <ProfileFildCard
+          <ProfileFieldCard
             keys={"Account Status"}
             value={sellers.profile?.accountStatus}
           />
@@ -158,22 +158,22 @@ const Profile = () => {
         </div>
         <div className="space-y-5">
           <div className="">
-            <ProfileFildCard
+            <ProfileFieldCard
               keys={"Adress"}
               value={sellers.profile?.pickupAddress?.address}
             />
             <Divider />
-            <ProfileFildCard
+            <ProfileFieldCard
               keys={"City"}
               value={sellers.profile?.pickupAddress?.city || "not provided"}
             />
             <Divider />
-            <ProfileFildCard
+            <ProfileFieldCard
               keys={"State"}
               value={sellers.profile?.pickupAddress?.state}
             />
             <Divider />
-            <ProfileFildCard
+            <ProfileFieldCard
               keys={"Mobile"}
               value={sellers.profile?.pickupAddress?.mobile}
             />
@@ -197,19 +197,19 @@ const Profile = () => {
         </div>
         <div className="space-y-5">
           <div className="">
-            <ProfileFildCard
+            <ProfileFieldCard
               keys={"Account Holder Name"}
               value={sellers.profile?.bankDetails?.accountHolderName}
             />
             <Divider />
-            <ProfileFildCard
+            <ProfileFieldCard
               keys={"Account Number"}
               value={
                 sellers.profile?.bankDetails?.accountNumber || "not provided"
               }
             />
             <Divider />
-            <ProfileFildCard
+            <ProfileFieldCard
               keys={"IFSC CODE"}
               value={sellers.profile?.bankDetails?.ifscCode}
             />

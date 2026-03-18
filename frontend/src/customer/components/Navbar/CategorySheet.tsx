@@ -4,8 +4,8 @@ import { womenLevelThree } from "../../../data/category/level-three/womenLevelTh
 import { womenLevelTwo } from "../../../data/category/level-two/womenLevelTwo";
 import { useNavigate } from "react-router-dom";
 import { Box } from "@mui/material";
-import { electronicsLevelTwo } from "../../../data/category/level-two/electronicsLavelTwo";
-import { furnitureLevelTwo } from "../../../data/category/level-two/furnitureLevleTwo";
+import { electronicsLevelTwo } from "../../../data/category/level-two/electronicsLevelTwo";
+import { furnitureLevelTwo } from "../../../data/category/level-two/furnitureLevelTwo";
 import { furnitureLevelThree } from "../../../data/category/level-three/furnitureLevelThree";
 import { electronicsLevelThree } from "../../../data/category/level-three/electronicsLevelThree";
 

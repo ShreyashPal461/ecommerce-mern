@@ -1,7 +1,7 @@
 import { Divider } from '@mui/material'
 
 
-const ProfileFildCard = ({value,keys}:any) => {
+const ProfileFieldCard = ({value,keys}:any) => {
   return (
     <div className='p-5 flex items-center bg-slate-50 '>
           <p className='w-20 lg:w-36 pr-5'>{keys}</p>
@@ -11,4 +11,4 @@ const ProfileFildCard = ({value,keys}:any) => {
   )
 }
 
-export default ProfileFildCard
+export default ProfileFieldCard

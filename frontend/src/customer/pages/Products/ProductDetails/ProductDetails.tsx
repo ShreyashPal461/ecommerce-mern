@@ -11,13 +11,13 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import SmilarProduct from '../SimilarProduct/SmilarProduct';
 import ZoomableImage from './ZoomableImage';
-import { useAppDispatch, useAppSelector } from '../../../../Redux Toolkit/Store';
+import { useAppDispatch, useAppSelector } from '../../../../ReduxToolkit/Store';
 import { useNavigate, useParams } from 'react-router-dom';
-import { fetchProductById, getAllProducts } from '../../../../Redux Toolkit/Customer/ProductSlice';
-import { addItemToCart } from '../../../../Redux Toolkit/Customer/CartSlice';
+import { fetchProductById, getAllProducts } from '../../../../ReduxToolkit/Customer/ProductSlice';
+import { addItemToCart } from '../../../../ReduxToolkit/Customer/CartSlice';
 import ProductReviewCard from '../../Review/ProductReviewCard';
 import RatingCard from '../../Review/RatingCard';
-import { fetchReviewsByProductId } from '../../../../Redux Toolkit/Customer/ReviewSlice';
+import { fetchReviewsByProductId } from '../../../../ReduxToolkit/Customer/ReviewSlice';
 import { useState, useEffect } from 'react';
 
 const style = {

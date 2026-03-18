@@ -13,10 +13,10 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import CartItemCard from "./CartItemCard";
 import { useNavigate } from "react-router-dom";
 import PricingCard from "./PricingCard";
-import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
-import { fetchUserCart } from "../../../Redux Toolkit/Customer/CartSlice";
+import { useAppDispatch, useAppSelector } from "../../../ReduxToolkit/Store";
+import { fetchUserCart } from "../../../ReduxToolkit/Customer/CartSlice";
 import type { CartItem } from "../../../types/cartTypes";
-import { applyCoupon } from "../../../Redux Toolkit/Customer/CouponSlice";
+import { applyCoupon } from "../../../ReduxToolkit/Customer/CouponSlice";
 import { Close } from "@mui/icons-material";
 
 const Cart = () => {

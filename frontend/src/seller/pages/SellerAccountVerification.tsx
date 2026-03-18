@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { useAppDispatch } from '../../Redux Toolkit/Store';
-import { verifySellerEmail } from '../../Redux Toolkit/Seller/sellerSlice';
+import { useAppDispatch } from '../../ReduxToolkit/Store';
+import { verifySellerEmail } from '../../ReduxToolkit/Seller/sellerSlice';
 
 const SellerAccountVerification = () => {
   const{ otp}=useParams();

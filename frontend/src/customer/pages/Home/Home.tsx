@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import HomeCategory from './HomeCategory/HomeCategory'
 import TopBrand from './TopBrands/Grid'
-import ElectronicCategory from './Electronic Category/ElectronicCategory'
+import ElectronicCategory from './ElectronicCategory/ElectronicCategory'
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import { Backdrop, Button, CircularProgress } from '@mui/material'
 import ChatBot from '../ChatBot/ChatBot'
 import { useNavigate } from 'react-router-dom'
 import StorefrontIcon from '@mui/icons-material/Storefront';
-import { useAppSelector } from '../../../Redux Toolkit/Store'
+import { useAppSelector } from '../../../ReduxToolkit/Store'
 import DealSlider from './Deals/DealSlider'
 
 

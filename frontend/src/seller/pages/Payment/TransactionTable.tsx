@@ -6,8 +6,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
-import { fetchTransactionsBySeller } from '../../../Redux Toolkit/Seller/transactionSlice';
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store';
+import { fetchTransactionsBySeller } from '../../../ReduxToolkit/Seller/transactionSlice';
 import {type Transaction } from '../../../types/Transaction';
 import { redableDateTime } from '../../../util/redableDateTime';
 

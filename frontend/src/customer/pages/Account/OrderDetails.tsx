@@ -2,8 +2,8 @@ import { Box, Button, Divider } from '@mui/material'
 import  { useEffect } from 'react'
 import PaymentsIcon from '@mui/icons-material/Payments';
 import OrderStepper from './OrderStepper';
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
-import { cancelOrder, fetchOrderById, fetchOrderItemById } from '../../../Redux Toolkit/Customer/OrderSlice';
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store';
+import { cancelOrder, fetchOrderById, fetchOrderItemById } from '../../../ReduxToolkit/Customer/OrderSlice';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const OrderDetails = () => {

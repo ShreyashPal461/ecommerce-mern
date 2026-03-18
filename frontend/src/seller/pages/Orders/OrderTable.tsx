@@ -7,8 +7,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Box, Button, Menu, MenuItem, styled } from '@mui/material';
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
-import { fetchSellerOrders, updateOrderStatus } from '../../../Redux Toolkit/Seller/sellerOrderSlice';
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store';
+import { fetchSellerOrders, updateOrderStatus } from '../../../ReduxToolkit/Seller/sellerOrderSlice';
 import { type Order, type OrderItem } from '../../../types/orderTypes';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({

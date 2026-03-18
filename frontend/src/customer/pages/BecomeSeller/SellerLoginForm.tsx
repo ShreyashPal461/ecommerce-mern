@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react'
 import OTPInput from '../../components/OtpFild/OTPInput'
 import {  useFormik } from 'formik';
 
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
-import {  verifyLoginOtp } from '../../../Redux Toolkit/Seller/sellerAuthenticationSlice';
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store';
+import {  verifyLoginOtp } from '../../../ReduxToolkit/Seller/sellerAuthenticationSlice';
 import { useNavigate } from 'react-router-dom';
-import { sendLoginSignupOtp } from '../../../Redux Toolkit/Customer/AuthSlice';
+import { sendLoginSignupOtp } from '../../../ReduxToolkit/Customer/AuthSlice';
 
 const SellerLoginForm = () => {
 

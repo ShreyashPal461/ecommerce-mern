@@ -1,8 +1,8 @@
 import { Button, CircularProgress, Step, StepLabel, Stepper } from "@mui/material";
 import { useFormik } from "formik";
 import { useState } from "react";
-import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
-import { createSeller } from "../../../Redux Toolkit/Seller/sellerAuthenticationSlice";
+import { useAppDispatch, useAppSelector } from "../../../ReduxToolkit/Store";
+import { createSeller } from "../../../ReduxToolkit/Seller/sellerAuthenticationSlice";
 import BecomeSellerFormStep1 from "./BecomeSellerFormStep1";
 import BecomeSellerFormStep2 from "./BecomeSellerFormStep2";
 import BecomeSellerFormStep3 from "./BecomeSellerFormStep3";

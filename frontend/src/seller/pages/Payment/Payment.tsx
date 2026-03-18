@@ -2,7 +2,7 @@ import { Button, Card, Divider } from '@mui/material'
 import  { useState } from 'react'
 import TransactionTable from './TransactionTable';
 import Payouts from './PayoutsTable';
-import { useAppSelector } from '../../../Redux Toolkit/Store';
+import { useAppSelector } from '../../../ReduxToolkit/Store';
 
 const tab = [
     { name: "Transaction" },

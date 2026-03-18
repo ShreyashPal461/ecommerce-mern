@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
-import { askProductQuestion, chatBot } from "../../../Redux Toolkit/Customer/AiChatBotSlice";
+import { useAppDispatch, useAppSelector } from "../../../ReduxToolkit/Store";
+import { askProductQuestion, chatBot } from "../../../ReduxToolkit/Customer/AiChatBotSlice";
 import { Button, IconButton } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import PromptMessage from "./PromptMessage";

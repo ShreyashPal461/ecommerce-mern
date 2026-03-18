@@ -2,10 +2,10 @@ import { Route, Routes } from 'react-router-dom'
 import SellersTable from '../admin/pages/sellers/SellersTable'
 import Coupon from '../admin/pages/Coupon/Coupon'
 import CouponForm from '../admin/pages/Coupon/CreateCouponForm'
-import GridTable from '../admin/pages/Home Page/GridTable'
-import ElectronicsTable from '../admin/pages/Home Page/ElectronicsTable'
-import ShopByCategoryTable from '../admin/pages/Home Page/ShopByCategoryTable'
-import Deal from '../admin/pages/Home Page/Deal'
+import GridTable from '../admin/pages/HomePage/GridTable'
+import ElectronicsTable from '../admin/pages/HomePage/ElectronicsTable'
+import ShopByCategoryTable from '../admin/pages/HomePage/ShopByCategoryTable'
+import Deal from '../admin/pages/HomePage/Deal'
 
 const AdminRoutes = () => {
   return (

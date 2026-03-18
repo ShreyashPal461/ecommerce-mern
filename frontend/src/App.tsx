@@ -9,13 +9,13 @@ import CustomerRoutes from './routes/CustomerRoutes';
 import AdminDashboard from './admin/pages/Dashboard/Dashboard';
 import SellerAccountVerification from './seller/pages/SellerAccountVerification';
 import SellerAccountVerified from './seller/pages/SellerAccountVerified';
-import { useAppDispatch, useAppSelector } from './Redux Toolkit/Store';
+import { useAppDispatch, useAppSelector } from './ReduxToolkit/Store';
 import { useEffect } from 'react';
-import { fetchSellerProfile } from './Redux Toolkit/Seller/sellerSlice';
+import { fetchSellerProfile } from './ReduxToolkit/Seller/sellerSlice';
 import BecomeSeller from './customer/pages/BecomeSeller/BecomeSeller';
 import AdminAuth from './admin/pages/Auth/AdminAuth';
-import { fetchUserProfile } from './Redux Toolkit/Customer/UserSlice';
-import { createHomeCategories } from './Redux Toolkit/Customer/Customer/AsyncThunk';
+import { fetchUserProfile } from './ReduxToolkit/Customer/UserSlice';
+import { createHomeCategories } from './ReduxToolkit/Customer/Customer/AsyncThunk';
 import { homeCategories } from './data/homeCategories';
 
 function App() {

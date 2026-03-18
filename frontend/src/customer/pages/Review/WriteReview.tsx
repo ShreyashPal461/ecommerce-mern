@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store';
 import { useParams } from 'react-router-dom';
-import { fetchProductById } from '../../../Redux Toolkit/Customer/ProductSlice';
+import { fetchProductById } from '../../../ReduxToolkit/Customer/ProductSlice';
 
 import ReviewForm from './ReviewForm';
 

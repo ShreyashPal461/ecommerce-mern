@@ -10,9 +10,9 @@ import {
    
     Typography,
 } from "@mui/material";
-import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
-import { fetchHomeCategories } from "../../../Redux Toolkit/Admin/AdminSlice";
-import { updateDeal } from "../../../Redux Toolkit/Admin/DealSlice";
+import { useAppDispatch, useAppSelector } from "../../../ReduxToolkit/Store";
+import { fetchHomeCategories } from "../../../ReduxToolkit/Admin/AdminSlice";
+import { updateDeal } from "../../../ReduxToolkit/Admin/DealSlice";
 
 // Validation schema using Yup
 const validationSchema = Yup.object({

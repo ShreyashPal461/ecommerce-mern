@@ -8,9 +8,9 @@ import {
   TableRow,
 } from "@mui/material";
 import React from "react";
-import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
+import { useAppDispatch, useAppSelector } from "../../../ReduxToolkit/Store";
 import { type Order, type OrderItem } from "../../../types/orderTypes";
-import { fetchPayoutsBySeller } from "../../../Redux Toolkit/Seller/payoutSlice";
+import { fetchPayoutsBySeller } from "../../../ReduxToolkit/Seller/payoutSlice";
 
 const PayoutsTable = () => {
   const { sellerOrder } = useAppSelector((store) => store);

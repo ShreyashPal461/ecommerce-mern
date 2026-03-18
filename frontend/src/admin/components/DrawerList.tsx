@@ -1,4 +1,4 @@
-import DrawerList from "../../admin seller/components/drawerList/DrawerList";
+import DrawerList from "../../AdminSeller/components/drawerList/DrawerList";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import AddIcon from '@mui/icons-material/Add';
@@ -27,7 +27,7 @@ const menu = [
         activeIcon: <AddIcon className="text-white" />,
     },
     {
-        name: "Home Page",
+        name: "HomePage",
         path: "/admin/home-grid",
         icon: <HomeIcon className="text-primary-color" />,
         activeIcon: <HomeIcon className="text-white" />,

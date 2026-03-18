@@ -1,5 +1,5 @@
 import SellerRoutes from "../../../routes/SellerRoutes";
-import Navbar from "../../../admin seller/components/navbar/Navbar";
+import Navbar from "../../../AdminSeller/components/navbar/Navbar";
 import SellerDrawerList from "../../components/SideBar/DrawerList";
 
 const SellerDashboard = () => {

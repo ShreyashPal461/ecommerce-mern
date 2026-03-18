@@ -4,7 +4,7 @@ import {
   sumCartItemMrpPrice,
   sumCartItemSellingPrice,
 } from "../../../util/cartCalculator";
-import { useAppSelector } from "../../../Redux Toolkit/Store";
+import { useAppSelector } from "../../../ReduxToolkit/Store";
 
 const PricingCard = () => {
   const { cart } = useAppSelector((store) => store);

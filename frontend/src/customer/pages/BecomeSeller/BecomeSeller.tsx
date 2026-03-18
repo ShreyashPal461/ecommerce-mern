@@ -2,7 +2,7 @@ import { Alert, Button, Snackbar } from "@mui/material";
 import { useState, useEffect } from "react";
 import SellerAccountForm from "./SellerAccountForm";
 import SellerLoginForm from "./SellerLoginForm";
-import { useAppSelector } from "../../../Redux Toolkit/Store";
+import { useAppSelector } from "../../../ReduxToolkit/Store";
 
 
 const BecomeSeller = () => {

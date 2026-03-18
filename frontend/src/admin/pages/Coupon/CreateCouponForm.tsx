@@ -18,8 +18,8 @@ import type { Dayjs } from "dayjs";
 import {
   useAppDispatch,
   useAppSelector,
-} from "../../../Redux Toolkit/Store";
-import { createCoupon } from "../../../Redux Toolkit/Admin/AdminCouponSlice";
+} from "../../../ReduxToolkit/Store";
+import { createCoupon } from "../../../ReduxToolkit/Admin/AdminCouponSlice";
 
 interface CouponFormValues {
   code: string;

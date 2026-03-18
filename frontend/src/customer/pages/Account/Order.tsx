@@ -1,7 +1,7 @@
 import  { useEffect } from 'react'
 import OrderItemCard from './OrderItemCard'
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
-import { fetchUserOrderHistory } from '../../../Redux Toolkit/Customer/OrderSlice';
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store';
+import { fetchUserOrderHistory } from '../../../ReduxToolkit/Customer/OrderSlice';
 
 const Order = () => {
   const dispatch = useAppDispatch()

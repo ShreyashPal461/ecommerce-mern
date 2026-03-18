@@ -2,9 +2,9 @@ import { Button, CircularProgress, TextField } from '@mui/material'
 import  { useEffect, useState } from 'react'
 import OTPInput from '../../components/OtpFild/OTPInput'
 
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store';
 import { useNavigate } from 'react-router-dom';
-import { sendLoginSignupOtp, signup } from '../../../Redux Toolkit/Customer/AuthSlice';
+import { sendLoginSignupOtp, signup } from '../../../ReduxToolkit/Customer/AuthSlice';
 import { useFormik } from 'formik';
 
 const SignupForm = () => {

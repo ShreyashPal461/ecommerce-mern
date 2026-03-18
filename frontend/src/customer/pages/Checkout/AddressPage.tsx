@@ -4,8 +4,8 @@ import { Box, Button, FormControlLabel, Modal, Radio, RadioGroup } from '@mui/ma
 import AddressForm from './AddresssForm'
 import AddressCard from './AddressCard'
 import AddIcon from '@mui/icons-material/Add';
-import { createOrder } from '../../../Redux Toolkit/Customer/OrderSlice'
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store'
+import { createOrder } from '../../../ReduxToolkit/Customer/OrderSlice'
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store'
 
 const style = {
     position: 'absolute',

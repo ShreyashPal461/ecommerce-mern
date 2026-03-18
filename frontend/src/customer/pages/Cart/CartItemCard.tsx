@@ -4,8 +4,8 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 import CloseIcon from '@mui/icons-material/Close';
 import type { CartItem } from '../../../types/cartTypes';
-import { useAppDispatch } from '../../../Redux Toolkit/Store';
-import { deleteCartItem, updateCartItem } from '../../../Redux Toolkit/Customer/CartSlice';
+import { useAppDispatch } from '../../../ReduxToolkit/Store';
+import { deleteCartItem, updateCartItem } from '../../../ReduxToolkit/Customer/CartSlice';
 
 interface CartItemProps {
     item:CartItem

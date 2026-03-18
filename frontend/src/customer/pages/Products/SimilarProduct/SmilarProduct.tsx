@@ -2,9 +2,9 @@ import SimilarProductCard from "./SimilarProductCard";
 import {
   useAppDispatch,
   useAppSelector,
-} from "../../../../Redux Toolkit/Store";
+} from "../../../../ReduxToolkit/Store";
 import { useEffect } from "react";
-import { getAllProducts } from "../../../../Redux Toolkit/Customer/ProductSlice";
+import { getAllProducts } from "../../../../ReduxToolkit/Customer/ProductSlice";
 import { useParams } from "react-router-dom";
 
 const SmilarProduct = () => {

@@ -3,8 +3,8 @@ import Divider from "@mui/material/Divider";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useAppDispatch } from "../../../Redux Toolkit/Store";
-import { performLogout } from "../../../Redux Toolkit/Customer/AuthSlice";
+import { useAppDispatch } from "../../../ReduxToolkit/Store";
+import { performLogout } from "../../../ReduxToolkit/Customer/AuthSlice";
 
 export interface Menu{
     name: string;

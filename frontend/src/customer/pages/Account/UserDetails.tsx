@@ -5,7 +5,7 @@ import {
 } from "@mui/material";
 
 import ProfileFildCard from "../../../seller/pages/Account/ProfileFildCard";
-import { useAppSelector } from "../../../Redux Toolkit/Store";
+import { useAppSelector } from "../../../ReduxToolkit/Store";
 
 const UserDetails = () => {
   const { user } = useAppSelector((store) => store);

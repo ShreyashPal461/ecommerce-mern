@@ -1,8 +1,8 @@
 import { Box, Button, FormControl, FormHelperText, InputLabel, MenuItem, Select, TextField, Typography } from '@mui/material'
 import { useFormik } from 'formik';
 
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
-import { createDeal } from '../../../Redux Toolkit/Admin/DealSlice';
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store';
+import { createDeal } from '../../../ReduxToolkit/Admin/DealSlice';
 
 const CreateDealForm = () => {
   const { homePage } = useAppSelector(store => store);

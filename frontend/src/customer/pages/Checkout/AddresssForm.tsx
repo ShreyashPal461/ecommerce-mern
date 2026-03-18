@@ -7,8 +7,8 @@ import {
   TextField,
   Grid,
 } from '@mui/material';
-import { useAppDispatch } from '../../../Redux Toolkit/Store';
-import { createOrder } from '../../../Redux Toolkit/Customer/OrderSlice';
+import { useAppDispatch } from '../../../ReduxToolkit/Store';
+import { createOrder } from '../../../ReduxToolkit/Customer/OrderSlice';
 import type { Address } from '../../../types/userTypes';
 
 // Validation schema

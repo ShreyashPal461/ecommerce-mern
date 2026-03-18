@@ -1,7 +1,7 @@
 import { Button } from '@mui/material'
 import { useState } from 'react'
 import DealsTable from './DealsTable'
-import { useAppSelector } from '../../../Redux Toolkit/Store'
+import { useAppSelector } from '../../../ReduxToolkit/Store'
 import DealsCategoryTable from './DealsCategoryTable'
 import CreateDealForm from './CreateDealForm'
 const tab = [

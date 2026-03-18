@@ -1,6 +1,6 @@
 import { type ChangeEvent, useState } from 'react'
-import { searchProduct } from '../../../Redux Toolkit/Customer/ProductSlice';
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
+import { searchProduct } from '../../../ReduxToolkit/Customer/ProductSlice';
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store';
 import ProductCard from '../Products/ProductCard/ProductCard';
 
 const SearchProducts = () => {

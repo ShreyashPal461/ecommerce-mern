@@ -1,9 +1,9 @@
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store';
 import { useParams } from 'react-router-dom';
-import { fetchProductById } from '../../../Redux Toolkit/Customer/ProductSlice';
+import { fetchProductById } from '../../../ReduxToolkit/Customer/ProductSlice';
 import { Divider} from '@mui/material';
 import ProductReviewCard from './ProductReviewCard';
-import { fetchReviewsByProductId } from '../../../Redux Toolkit/Customer/ReviewSlice';
+import { fetchReviewsByProductId } from '../../../ReduxToolkit/Customer/ReviewSlice';
 import RatingCard from './RatingCard';
 import { useEffect } from 'react';
 

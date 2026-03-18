@@ -1,6 +1,6 @@
 
 import HomeCategoryCard from './HomeCategoryCard'
-import { useAppSelector } from '../../../../Redux Toolkit/Store';
+import { useAppSelector } from '../../../../ReduxToolkit/Store';
 
 
 const HomeCategory = () => {

@@ -5,8 +5,8 @@ import Order from './Order'
 import UserDetails from './UserDetails'
 import SavedCards from './SavedCards'
 import OrderDetails from './OrderDetails'
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store'
-import { performLogout } from '../../../Redux Toolkit/Customer/AuthSlice'
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store'
+import { performLogout } from '../../../ReduxToolkit/Customer/AuthSlice'
 import Addresses from './Adresses'
 
 const menu = [

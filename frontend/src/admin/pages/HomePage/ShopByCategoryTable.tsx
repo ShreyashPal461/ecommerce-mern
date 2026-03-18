@@ -1,5 +1,5 @@
 import HomeCategoryTable from './HomeCategoryTable'
-import { useAppSelector } from '../../../Redux Toolkit/Store';
+import { useAppSelector } from '../../../ReduxToolkit/Store';
 
 const ShopByCategoryTable = () => {
     const { homePage } = useAppSelector((store) => store);

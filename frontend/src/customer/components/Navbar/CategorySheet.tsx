@@ -1,13 +1,13 @@
-import { menLevelThree } from "../../../data/category/level three/menLevelThree";
-import { menLevelTwo } from "../../../data/category/level two/menLevelTwo";
-import { womenLevelThree } from "../../../data/category/level three/womenLevelThree";
-import { womenLevelTwo } from "../../../data/category/level two/womenLevelTwo";
+import { menLevelThree } from "../../../data/category/level-three/menLevelThree";
+import { menLevelTwo } from "../../../data/category/level-two/menLevelTwo";
+import { womenLevelThree } from "../../../data/category/level-three/womenLevelThree";
+import { womenLevelTwo } from "../../../data/category/level-two/womenLevelTwo";
 import { useNavigate } from "react-router-dom";
 import { Box } from "@mui/material";
-import { electronicsLevelTwo } from "../../../data/category/level two/electronicsLavelTwo";
-import { furnitureLevelTwo } from "../../../data/category/level two/furnitureLevleTwo";
-import { furnitureLevelThree } from "../../../data/category/level three/furnitureLevelThree";
-import { electronicsLevelThree } from "../../../data/category/level three/electronicsLevelThree";
+import { electronicsLevelTwo } from "../../../data/category/level-two/electronicsLavelTwo";
+import { furnitureLevelTwo } from "../../../data/category/level-two/furnitureLevleTwo";
+import { furnitureLevelThree } from "../../../data/category/level-three/furnitureLevelThree";
+import { electronicsLevelThree } from "../../../data/category/level-three/electronicsLevelThree";
 
 const categoryTwo: { [key: string]: any[] } = {
   men: menLevelTwo,

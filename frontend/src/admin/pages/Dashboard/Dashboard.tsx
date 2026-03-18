@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 import AdminRoutes from '../../../routes/AdminRoutes'
 // import DrawerList from './DrawerList'
-import Navbar from '../../../admin seller/components/navbar/Navbar'
+import Navbar from '../../../AdminSeller/components/navbar/Navbar'
 import AdminDrawerList from '../../components/DrawerList'
 import { Alert, Snackbar } from '@mui/material'
-import { useAppSelector } from '../../../Redux Toolkit/Store'
+import { useAppSelector } from '../../../ReduxToolkit/Store'
 
 const AdminDashboard = () => {
   const { deal,admin } = useAppSelector(store => store)

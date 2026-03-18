@@ -17,8 +17,8 @@ import {
 
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import { useParams, useSearchParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
-import { getAllProducts } from "../../../Redux Toolkit/Customer/ProductSlice";
+import { useAppDispatch, useAppSelector } from "../../../ReduxToolkit/Store";
+import { getAllProducts } from "../../../ReduxToolkit/Customer/ProductSlice";
 
 const Products = () => {
   const [sort, setSort] = React.useState("");

@@ -1,8 +1,8 @@
 import { teal } from "@mui/material/colors";
 import type { Product } from "../../../types/productTypes";
-import { useAppDispatch } from "../../../Redux Toolkit/Store";
+import { useAppDispatch } from "../../../ReduxToolkit/Store";
 import CloseIcon from "@mui/icons-material/Close";
-import { addProductToWishlist } from "../../../Redux Toolkit/Customer/WishlistSlice";
+import { addProductToWishlist } from "../../../ReduxToolkit/Customer/WishlistSlice";
 import { Button } from "@mui/material";
 
 interface ProductCardProps {

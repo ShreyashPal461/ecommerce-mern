@@ -2,7 +2,7 @@ import  { useEffect, useState } from 'react'
 import LoginForm from './LoginForm'
 import { Alert, Button, Snackbar } from '@mui/material';
 import SignupForm from './SignupForm';
-import { useAppSelector } from '../../../Redux Toolkit/Store';
+import { useAppSelector } from '../../../ReduxToolkit/Store';
 
 const Auth = () => {
     const [isLoginPage, setIsLoginPage] = useState(true);

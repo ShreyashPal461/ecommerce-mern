@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import SellingChart from "./SellingChart";
-import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
-import { fetchSellerReport } from "../../../Redux Toolkit/Seller/sellerSlice";
+import { useAppDispatch, useAppSelector } from "../../../ReduxToolkit/Store";
+import { fetchSellerReport } from "../../../ReduxToolkit/Seller/sellerSlice";
 import ReportCard from "./Report/ReportCard";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import {

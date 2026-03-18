@@ -8,8 +8,8 @@ import type { Product } from "../../../../types/productTypes";
 import {
   useAppDispatch,
   useAppSelector,
-} from "../../../../Redux Toolkit/Store";
-import { addProductToWishlist } from "../../../../Redux Toolkit/Customer/WishlistSlice";
+} from "../../../../ReduxToolkit/Store";
+import { addProductToWishlist } from "../../../../ReduxToolkit/Customer/WishlistSlice";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { isWishlisted } from "../../../../util/isWishlisted";
 import ModeCommentIcon from "@mui/icons-material/ModeComment";

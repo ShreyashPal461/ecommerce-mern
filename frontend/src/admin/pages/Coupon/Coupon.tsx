@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import CouponTable from './CouponTable'
-import { useAppDispatch } from '../../../Redux Toolkit/Store'
-import { fetchAllCoupons } from '../../../Redux Toolkit/Admin/AdminCouponSlice'
+import { useAppDispatch } from '../../../ReduxToolkit/Store'
+import { fetchAllCoupons } from '../../../ReduxToolkit/Admin/AdminCouponSlice'
 
 const Coupon = () => {
     const dispatch = useAppDispatch()

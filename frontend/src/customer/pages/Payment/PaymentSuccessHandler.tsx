@@ -1,7 +1,7 @@
 import { Backdrop, Button, CircularProgress } from "@mui/material";
 import { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
-import { paymentSuccess } from "../../../Redux Toolkit/Customer/OrderSlice";
+import { useAppDispatch, useAppSelector } from "../../../ReduxToolkit/Store";
+import { paymentSuccess } from "../../../ReduxToolkit/Customer/OrderSlice";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const PaymentSuccessHandler = () => {

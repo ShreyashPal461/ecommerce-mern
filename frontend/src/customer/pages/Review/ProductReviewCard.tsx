@@ -3,8 +3,8 @@ import { Rating, Box, Grid } from "@mui/material";
 import type { Review } from "../../../types/reviewTypes";
 import DeleteIcon from '@mui/icons-material/Delete';
 import { red } from "@mui/material/colors";
-import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
-import { deleteReview } from "../../../Redux Toolkit/Customer/ReviewSlice";
+import { useAppDispatch, useAppSelector } from "../../../ReduxToolkit/Store";
+import { deleteReview } from "../../../ReduxToolkit/Customer/ReviewSlice";
 
 interface ProductReviewCardProps {
   item: Review;

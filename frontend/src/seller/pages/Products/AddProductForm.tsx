@@ -17,18 +17,18 @@ import "tailwindcss/tailwind.css";
 import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 import CloseIcon from "@mui/icons-material/Close";
 import { mainCategory } from "../../../data/category/mainCategory";
-import { menLevelTwo } from "../../../data/category/level two/menLevelTwo";
-import { womenLevelTwo } from "../../../data/category/level two/womenLevelTwo";
-import { menLevelThree } from "../../../data/category/level three/menLevelThree";
-import { womenLevelThree } from "../../../data/category/level three/womenLevelThree";
+import { menLevelTwo } from "../../../data/category/level-two/menLevelTwo";
+import { womenLevelTwo } from "../../../data/category/level-two/womenLevelTwo";
+import { menLevelThree } from "../../../data/category/level-three/menLevelThree";
+import { womenLevelThree } from "../../../data/category/level-three/womenLevelThree";
 import { colors } from "../../../data/Filter/color";
-import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
-import { createProduct } from "../../../Redux Toolkit/Seller/sellerProductSlice";
+import { useAppDispatch, useAppSelector } from "../../../ReduxToolkit/Store";
+import { createProduct } from "../../../ReduxToolkit/Seller/sellerProductSlice";
 import { uploadToCloudinary } from "../../../util/uploadToCloudnary";
-import { electronicsLevelThree } from "../../../data/category/level three/electronicsLevelThree";
-import { electronicsLevelTwo } from "../../../data/category/level two/electronicsLavelTwo";
-import { furnitureLevelTwo } from "../../../data/category/level two/furnitureLevleTwo";
-import { furnitureLevelThree } from "../../../data/category/level three/furnitureLevelThree";
+import { electronicsLevelThree } from "../../../data/category/level-three/electronicsLevelThree";
+import { electronicsLevelTwo } from "../../../data/category/level-two/electronicsLavelTwo";
+import { furnitureLevelTwo } from "../../../data/category/level-two/furnitureLevleTwo";
+import { furnitureLevelThree } from "../../../data/category/level-three/furnitureLevelThree";
 import React, { useState, useEffect } from "react";
 
 const categoryTwo: { [key: string]: any[] } = {

@@ -1,9 +1,9 @@
 import { Box, IconButton, Modal, Paper, styled, Table, TableBody, TableCell, tableCellClasses, TableContainer, TableHead, TableRow } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 // import {Deal} from '../../../types/dealTypes';
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store';
 import EditIcon from '@mui/icons-material/Edit';
-import { deleteDeal, getAllDeals } from '../../../Redux Toolkit/Admin/DealSlice';
+import { deleteDeal, getAllDeals } from '../../../ReduxToolkit/Admin/DealSlice';
 import UpdateDealForm from './UpdateDealForm';
 import { Delete } from '@mui/icons-material';
 

@@ -6,9 +6,9 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { IconButton, styled} from '@mui/material';
-import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
+import { useAppDispatch, useAppSelector } from '../../../ReduxToolkit/Store';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
-import { deleteCoupon } from '../../../Redux Toolkit/Admin/AdminCouponSlice';
+import { deleteCoupon } from '../../../ReduxToolkit/Admin/AdminCouponSlice';
 import type { Coupon } from '../../../types/couponTypes';
 
 

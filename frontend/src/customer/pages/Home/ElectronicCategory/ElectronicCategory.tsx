@@ -1,6 +1,6 @@
 import ElectronicCategoryCard from "./ElectronicCategoryCard";
 import { useMediaQuery } from "@mui/material";
-import { useAppSelector } from "../../../../Redux Toolkit/Store";
+import { useAppSelector } from "../../../../ReduxToolkit/Store";
 const electronics = [
   {
     section: "ELECTRIC_CATEGORIES",

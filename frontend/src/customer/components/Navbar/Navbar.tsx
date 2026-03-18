@@ -19,7 +19,7 @@ import CategorySheet from "./CategorySheet";
 import DrawerList from "./DrawerList";
 import { useNavigate} from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
+import { useAppSelector } from "../../../Redux Toolkit/Store";
 
 import { FavoriteBorder } from "@mui/icons-material";
 

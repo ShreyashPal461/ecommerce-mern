@@ -1,0 +1,7 @@
+
+> ecommerce-multivendor-vite@0.0.0 build
+> tsc -b && vite build
+
+src/admin/components/DrawerList.tsx(1,1): error TS6192: All imports in import declaration are unused.
+src/Redux Toolkit/Seller/sellerOrderSlice.ts(64,45): error TS2304: Cannot find name 'jwt'.
+src/seller/pages/Orders/OrderTable.tsx(72,7): error TS2561: Object literal may only specify known properties, but 'jwt' does not exist in type '{ _jwt: string; orderId: number; orderStatus: OrderStatus; }'. Did you mean to write '_jwt'?

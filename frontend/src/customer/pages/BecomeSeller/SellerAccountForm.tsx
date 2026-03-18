@@ -25,7 +25,7 @@ const SellerAccountForm = () => {
     setActiveStep(activeStep + value);
   };
 
-  const [otp, setOpt] = useState<any>();
+
  
   const formik = useFormik({
     initialValues: {
@@ -67,7 +67,6 @@ const SellerAccountForm = () => {
   });
 
   const handleOtpChange = (otpValue: string) => {
-    setOpt(otpValue);
     console.log(otpValue);
     // formik.setFieldValue("opt",otpValue)
   };

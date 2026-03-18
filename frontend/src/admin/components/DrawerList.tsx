@@ -1,4 +1,3 @@
-import { useLocation, useNavigate } from "react-router-dom";
 import DrawerList from "../../admin seller/components/drawerList/DrawerList";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';

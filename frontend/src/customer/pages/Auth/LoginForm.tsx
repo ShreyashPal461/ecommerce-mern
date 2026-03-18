@@ -1,4 +1,3 @@
-```javascript
 import { Button, CircularProgress, TextField } from '@mui/material'
 import { useEffect, useState } from 'react'
 import OTPInput from '../../components/OtpFild/OTPInput'

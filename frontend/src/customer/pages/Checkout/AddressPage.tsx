@@ -134,7 +134,7 @@ const AddressPage = () => {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={style}>
-                    <AddressForm paymentGateway={paymentGateway} handleClose={handleClose} />
+                    <AddressForm paymentGateway={paymentGateway}  />
                 </Box>
             </Modal>
         </div>

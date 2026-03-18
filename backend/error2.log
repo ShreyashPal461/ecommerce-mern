@@ -1,0 +1,6 @@
+MongoDB connected: cluster0-shard-00-00.bl8a7.mongodb.net
+Server is running on port 8080
+Admin user already exists.
+Error in authentication middleware:  Invalid token
+Error in authentication middleware:  Invalid token
+^C

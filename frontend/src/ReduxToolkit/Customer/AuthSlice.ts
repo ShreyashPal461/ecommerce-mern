@@ -8,8 +8,9 @@ import {
     type ApiResponse,
     type AuthState,
 } from '../../types/authTypes';
+import { AxiosError } from 'axios';
 import { api } from '../../Config/Api';
-import { type RootState } from '../Store';
+import { type AppDispatch, type RootState } from '../Store';
 import { resetUserState } from './UserSlice';
 import { resetCartState } from './CartSlice';
 
@@ -32,9 +33,14 @@ export const sendLoginSignupOtp = createAsyncThunk<ApiResponse, { email: string 
             const response = await api.post(`${API_URL}/sent/login-signup-otp`, { email });
             console.log("otp sent successfully",response.data);
             return response.data;
-        } catch (error:any) {
-            console.log("error --- ",error)
-            return rejectWithValue(error.response.data.error||'Failed to send OTP');
+        } catch (error: unknown) {
+            const axiosError = error as AxiosError<{ error?: string; message?: string }>;
+            console.log("error --- ", error)
+            return rejectWithValue(
+                axiosError.response?.data?.error ||
+                axiosError.response?.data?.message ||
+                'Failed to send OTP'
+            );
         }
     }
 );
@@ -49,7 +55,7 @@ export const signup = createAsyncThunk<AuthResponse, SignupRequest>(
            signupRequest.navigate("/")
            localStorage.setItem("jwt",response.data.jwt)
             return response.data;
-        } catch (error:any) {
+        } catch {
             return rejectWithValue('Signup failed');
         }
     }
@@ -64,8 +70,9 @@ export const signin = createAsyncThunk<AuthResponse, LoginRequest>(
            localStorage.setItem("jwt",response.data.jwt)
            loginRequest.navigate("/");
             return response.data;
-        } catch (error:any) {
-            console.log("error ", error.response)
+        } catch (error: unknown) {
+            const axiosError = error as AxiosError<{ error?: string; message?: string }>;
+            console.log("error ", axiosError.response?.data)
             return rejectWithValue('Signin failed');
         }
     }
@@ -77,7 +84,7 @@ export const resetPassword = createAsyncThunk<ApiResponse, ResetPasswordRequest>
         try {
             const response = await api.post<ApiResponse>(`${API_URL}/reset-password`, resetPasswordRequest);
             return response.data;
-        } catch (error:any) {
+        } catch {
             return rejectWithValue('Reset password failed');
         }
     }
@@ -89,7 +96,7 @@ export const resetPasswordRequest = createAsyncThunk<ApiResponse, { email: strin
         try {
             const response = await api.post<ApiResponse>(`${API_URL}/reset-password-request`, { email });
             return response.data;
-        } catch (error:any) {
+        } catch {
             return rejectWithValue('Reset password request failed');
         }
     }
@@ -176,7 +183,7 @@ export default authSlice.reducer;
 
 
 
-export const performLogout = () => async (dispatch: any) => {
+export const performLogout = () => async (dispatch: AppDispatch) => {
     dispatch(logout());
     dispatch(resetUserState());
     dispatch(resetCartState());

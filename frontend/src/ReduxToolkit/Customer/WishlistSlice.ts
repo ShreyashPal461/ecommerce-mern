@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/toolkit";
+import { AxiosError } from "axios";
 import { type Wishlist, type WishlistState } from "../../types/wishlistTypes";
 import { api } from "../../Config/Api";
 
@@ -8,47 +9,59 @@ const initialState: WishlistState = {
   error: null,
 };
 
-export const getWishlistByUserId = createAsyncThunk(
+export const getWishlistByUserId = createAsyncThunk<Wishlist | null, void, { rejectValue: string }>(
   "wishlist/getWishlistByUserId",
   async (_, { rejectWithValue }) => {
     try {
+      const jwt = localStorage.getItem("jwt");
+
+      if (!jwt) return null;
+
       const response = await api.get(`/api/wishlist`, {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("jwt")}`,
+          Authorization: `Bearer ${jwt}`,
         },
       });
       console.log("wishlist fetch ", response.data);
       return response.data;
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const axiosError = error as AxiosError<{ message?: string }>;
       console.log("error ", error);
       return rejectWithValue(
-        error.response?.data.message || "Failed to fetch wishlist"
+        axiosError.response?.data?.message || "Failed to fetch wishlist"
       );
     }
   }
 );
 
-export const addProductToWishlist = createAsyncThunk(
+export const addProductToWishlist = createAsyncThunk<Wishlist, { productId: number }, { rejectValue: string }>(
   "wishlist/addProductToWishlist",
   async (
-    { productId }: {productId: number },
+    { productId },
     { rejectWithValue }
   ) => {
     try {
+      const jwt = localStorage.getItem("jwt");
+
+      if (!jwt) {
+        return rejectWithValue("Please login to add wishlist items");
+      }
+
       const response = await api.post(
         `/api/wishlist/add-product/${productId}`,
         { },
         {
           headers: {
-            Authorization: `Bearer ${localStorage.getItem("jwt")}`,
+            Authorization: `Bearer ${jwt}`,
           },
         }
       );
       console.log(" add product ", response.data);
       return response.data;
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const axiosError = error as AxiosError<{ message?: string }>;
       return rejectWithValue(
-        error.response?.data.message || "Failed to add product to wishlist"
+        axiosError.response?.data?.message || "Failed to add product to wishlist"
       );
     }
   }
@@ -73,16 +86,16 @@ const wishlistSlice = createSlice({
     });
     builder.addCase(
       getWishlistByUserId.fulfilled,
-      (state, action: PayloadAction<Wishlist>) => {
+      (state, action: PayloadAction<Wishlist | null>) => {
         state.wishlist = action.payload;
         state.loading = false;
       }
     );
     builder.addCase(
       getWishlistByUserId.rejected,
-      (state, action: PayloadAction<any>) => {
+      (state, action) => {
         state.loading = false;
-        state.error = action.payload;
+        state.error = (action.payload as string) || "Failed to fetch wishlist";
       }
     );
 
@@ -100,9 +113,9 @@ const wishlistSlice = createSlice({
     );
     builder.addCase(
       addProductToWishlist.rejected,
-      (state, action: PayloadAction<any>) => {
+      (state, action) => {
         state.loading = false;
-        state.error = action.payload;
+        state.error = (action.payload as string) || "Failed to add product to wishlist";
       }
     );
   },

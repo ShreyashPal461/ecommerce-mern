@@ -22,12 +22,17 @@ import { useEffect } from 'react'
 
 const CustomerRoutes = () => {
   const dispatch = useAppDispatch()
-    const {  auth } = useAppSelector(store => store);
+  const { auth } = useAppSelector(store => store);
 
-    useEffect(() => {
-        dispatch(fetchUserCart(localStorage.getItem("jwt") || ""))
-        dispatch(getWishlistByUserId())
-    }, [auth.jwt])
+  useEffect(() => {
+    const jwt = localStorage.getItem("jwt") || auth.jwt;
+
+    if (!jwt || jwt === "null" || jwt === "undefined") return;
+
+    dispatch(fetchUserCart(jwt));
+    dispatch(getWishlistByUserId());
+  }, [auth.jwt, dispatch])
+
   return (
     <>
       <Navbar />

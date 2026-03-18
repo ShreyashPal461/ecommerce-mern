@@ -1,0 +1,52 @@
+
+> ecommerce-multivendor-vite@0.0.0 build
+> tsc -b && vite build
+
+src/admin seller/components/drawerList/DrawerList.tsx(51,42): error TS6133: 'index' is declared but its value is never read.
+src/admin seller/components/drawerList/DrawerList.tsx(66,43): error TS6133: 'index' is declared but its value is never read.
+src/admin/components/DrawerList.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/admin/components/DrawerList.tsx(12,1): error TS6133: 'AccountBoxIcon' is declared but its value is never read.
+src/admin/pages/Auth/AdminAuth.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/admin/pages/Auth/AdminLogin.tsx(1,10): error TS6133: 'Alert' is declared but its value is never read.
+src/admin/pages/Auth/AdminLogin.tsx(1,43): error TS6133: 'Snackbar' is declared but its value is never read.
+src/admin/pages/Auth/AdminLogin.tsx(2,8): error TS6133: 'React' is declared but its value is never read.
+src/admin/pages/Auth/AdminLogin.tsx(14,12): error TS6133: 'isOtpSent' is declared but its value is never read.
+src/admin/pages/Coupon/Coupon.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/admin/pages/Coupon/CreateCouponForm.tsx(17,8): error TS6133: 'dayjs' is declared but its value is never read.
+src/customer/components/Navbar/Navbar.tsx(32,9): error TS6133: 'dispatch' is declared but its value is never read.
+src/customer/components/Navbar/Navbar.tsx(33,17): error TS6133: 'auth' is declared but its value is never read.
+src/customer/pages/Auth/LoginForm.tsx(2,8): error TS6133: 'React' is declared but its value is never read.
+src/customer/pages/BecomeSeller/SellerAccountForm.tsx(28,10): error TS6133: 'otp' is declared but its value is never read.
+src/customer/pages/Checkout/AddresssForm.tsx(34,49): error TS6133: 'handleClose' is declared but its value is never read.
+src/customer/pages/Products/FilterSection.tsx(38,27): error TS6133: 'value' is declared but its value is never read.
+src/customer/pages/Products/ProductCard/ProductCard.tsx(110,20): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(props: { href: string; } & ButtonOwnProps & Omit<ButtonBaseOwnProps, "classes"> & CommonProps & Omit<DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>, "loading" | ... 27 more ... | "startIcon">): Element', gave the following error.
+    Type '(event: MouseEvent) => void' is not assignable to type 'MouseEventHandler<HTMLAnchorElement>'.
+      Types of parameters 'event' and 'event' are incompatible.
+        Type 'MouseEvent<HTMLAnchorElement, MouseEvent>' is missing the following properties from type 'MouseEvent': layerX, layerY, offsetX, offsetY, and 16 more.
+  Overload 2 of 3, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & ButtonOwnProps & Omit<ButtonBaseOwnProps, "classes"> & CommonProps & Omit<...>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element; variant: "contained"; color: "secondary"; sx: { zIndex: number; }; className: string; onClick: (event: MouseEvent) => void; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 3 of 3, '(props: DefaultComponentProps<ExtendButtonBaseTypeMap<ButtonTypeMap<{}, "button">>>): Element | null', gave the following error.
+    Type '(event: MouseEvent) => void' is not assignable to type 'MouseEventHandler<HTMLButtonElement>'.
+      Types of parameters 'event' and 'event' are incompatible.
+        Type 'MouseEvent<HTMLButtonElement, MouseEvent>' is missing the following properties from type 'MouseEvent': layerX, layerY, offsetX, offsetY, and 16 more.
+src/customer/pages/Products/ProductCard/ProductCard.tsx(124,18): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(props: { href: string; } & ButtonOwnProps & Omit<ButtonBaseOwnProps, "classes"> & CommonProps & Omit<DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>, "loading" | ... 27 more ... | "startIcon">): Element', gave the following error.
+    Type '(event: MouseEvent) => void' is not assignable to type 'MouseEventHandler<HTMLAnchorElement>'.
+      Types of parameters 'event' and 'event' are incompatible.
+        Type 'MouseEvent<HTMLAnchorElement, MouseEvent>' is missing the following properties from type 'MouseEvent': layerX, layerY, offsetX, offsetY, and 16 more.
+  Overload 2 of 3, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & ButtonOwnProps & Omit<ButtonBaseOwnProps, "classes"> & CommonProps & Omit<...>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element; onClick: (event: MouseEvent) => void; color: "secondary"; variant: "contained"; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 3 of 3, '(props: DefaultComponentProps<ExtendButtonBaseTypeMap<ButtonTypeMap<{}, "button">>>): Element | null', gave the following error.
+    Type '(event: MouseEvent) => void' is not assignable to type 'MouseEventHandler<HTMLButtonElement>'.
+      Types of parameters 'event' and 'event' are incompatible.
+        Type 'MouseEvent<HTMLButtonElement, MouseEvent>' is missing the following properties from type 'MouseEvent': layerX, layerY, offsetX, offsetY, and 16 more.
+src/customer/pages/Products/Products.tsx(114,44): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+src/customer/pages/Products/Products.tsx(139,26): error TS6133: 'e' is declared but its value is never read.
+src/customer/pages/Review/ReviewForm.tsx(107,32): error TS6133: 'event' is declared but its value is never read.
+src/customer/pages/Search/SearchProducts.tsx(35,18): error TS2741: Property 'categoryId' is missing in type '{ item: any; }' but required in type 'ProductCardProps'.
+src/Redux Toolkit/Customer/OrderSlice.ts(46,46): error TS6133: 'jwt' is declared but its value is never read.
+src/Redux Toolkit/Seller/sellerOrderSlice.ts(44,12): error TS6133: 'jwt' is declared but its value is never read.
+src/seller/pages/Account/ProfileFildCard.tsx(2,1): error TS6133: 'React' is declared but its value is never read.
+src/seller/pages/Orders/Orders.tsx(1,1): error TS6133: 'React' is declared but its value is never read.

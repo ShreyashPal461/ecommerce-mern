@@ -29,8 +29,7 @@ const Navbar = () => {
   const [selectedCategory, setSelectedCategory] = useState("men");
   const theme = useTheme();
   const isLarge = useMediaQuery(theme.breakpoints.up("lg"));
-  const dispatch = useAppDispatch();
-  const { user, auth, cart, sellers } = useAppSelector((store) => store);
+  const { user, cart, sellers } = useAppSelector((store) => store);
   const navigate = useNavigate();
   
 

@@ -27,11 +27,10 @@ const ContactSchema = Yup.object().shape({
 });
 
 interface AddressFormProp {
-  handleClose: () => void;
   paymentGateway:string
 }
 
-const AddressForm:React.FC<AddressFormProp> = ({handleClose,paymentGateway}) => {
+const AddressForm:React.FC<AddressFormProp> = ({paymentGateway}) => {
   const dispatch=useAppDispatch()
   const formik = useFormik({
     initialValues: {

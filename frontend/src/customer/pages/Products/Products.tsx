@@ -111,7 +111,7 @@ const Products = () => {
             gap-y-5 px-5 justify-center">
               {products.products.map((item: any) => (
                 <div key={item._id} className="">
-                  <ProductCard item={item} categoryId={categoryId} />
+                  <ProductCard item={item} categoryId={categoryId || ""} />
                 </div>
               ))}
             </section>
@@ -136,7 +136,7 @@ const Products = () => {
           <div className="flex justify-center pt-10">
             <Pagination
               page={page}
-              onChange={(e, value) => handlePageChange(value)}
+              onChange={(_, value) => handlePageChange(value)}
               color="primary"
               count={products?.totalPages}
               shape="rounded"

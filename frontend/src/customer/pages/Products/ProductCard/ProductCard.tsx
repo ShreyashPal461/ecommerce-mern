@@ -39,7 +39,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ item, categoryId }) => {
   const dispatch = useAppDispatch();
   const [showChatBot, setShowChatBot] = useState(false);
 
-  const handleAddWishlist = (event: MouseEvent) => {
+  const handleAddWishlist = (event: any) => {
     event.stopPropagation();
     if (item._id) dispatch(addProductToWishlist({ productId: item._id }));
   };
@@ -56,11 +56,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ item, categoryId }) => {
     return () => clearInterval(interval);
   }, [isHovered, item.images.length]);
 
-  const handleShowChatBot = (event: MouseEvent) => {
+  const handleShowChatBot = (event: any) => {
     event.stopPropagation();
     setShowChatBot(true);
   };
-  const handleCloseChatBot = (e: MouseEvent) => {
+  const handleCloseChatBot = (e: any) => {
     e.stopPropagation();
     setShowChatBot(false);
   };
